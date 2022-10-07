@@ -1,0 +1,14 @@
+{
+  "description": "This extension limits the number of notifications in the MessageList.",
+  "name": "MessageList Limit",
+  "original-author": "pbui@bx612.space",
+  "shell-version": [
+    "40",
+    "41",
+    "42",
+    "43"
+  ],
+  "url": "https://github.com/pbui/message-list-limit",
+  "uuid": "message-list-limit@pbui.bx612.space",
+  "version": 1
+}
