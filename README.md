@@ -6,5 +6,6 @@ Limit the number of notifications in the MessageList to prevent [lag].
 
 ## TODO
 
-[ ] Make `MESSAGE_LIST_LIMIT` configurable (default is `10`).
-[ ] Add settings UI.
+- [ ] Make `MESSAGE_LIST_LIMIT` configurable (default is `10`).
+- [ ] Add settings UI.
+- [ ] Package for GNOME Extension Store.
