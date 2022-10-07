@@ -1,7 +1,7 @@
 'use strict';
 
 const Main = imports.ui.main;
-const MESSAGE_LIST_LIMIT = 10;
+const NOTIFICATION_LIST_LIMIT = 10;
 
 let modifiedAddMessageAtIndex = null;
 
@@ -11,7 +11,7 @@ function init() {
         this.addMessageAtIndexOrig(message, index, animate);
 
         // Remove extra
-        this._messages.slice(MESSAGE_LIST_LIMIT).forEach(
+        this._messages.slice(NOTIFICATION_LIST_LIMIT).forEach(
             message => this.removeMessage(message)
         );
     }
