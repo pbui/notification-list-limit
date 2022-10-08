@@ -12,8 +12,11 @@ function init() {
 
         // Remove extra
         this._messages.slice(NOTIFICATION_LIST_LIMIT).forEach(
-            message => this.removeMessage(message)
-        );
+            message => {
+		message.notification.acknowledged = true;
+		this.removeMessage(message);
+	    }
+	);
     }
 }
 
