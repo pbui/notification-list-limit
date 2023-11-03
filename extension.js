@@ -11,12 +11,15 @@ function init() {
         this.addMessageAtIndexOrig(message, index, animate);
 
         // Remove extra
-        this._messages.slice(NOTIFICATION_LIST_LIMIT).forEach(
-            message => {
+	while (this._messages.length > NOTIFICATION_LIST_LIMIT) {
+	    const message = this._messages.pop();
+	    try {
 		message.notification.acknowledged = true;
 		this.removeMessage(message);
+	    } catch (error) {
+		console.log(error);
 	    }
-	);
+	}
     }
 }
 
